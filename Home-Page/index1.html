@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber-Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="">
+        <nav class="
+        w-full
+        box-border 
+        flex
+        bg-black 
+        h-[64px] 
+        py-[12px]
+        relative
+        text-[16px] font-medium
+        
+        ">
+
+            <div class=" 
+                        box-border
+                        flex
+                        mx-auto
+                        px-[64px]
+                        w-full
+                        max-w-[1408px]
+                        
+                        ">
+
+                <!-- logo -->
+                <ul class="
+                 text-white text-[24px]
+                 m-0
+                 flex flex-grow-0 flex-shrink-0 
+                 justify-start justify-self-start
+                 basis-auto
+                 px-[24px]
+                 font-normal
+                 
+                 ">
+                    <li class="
+                          self-center
+                          h-full">
+
+                        Uber</li>
+                </ul>
+                <!-- Navlinks -->
+                <ul class="invisible
+                           lg:visible
+                           flex
+                           flex-auto
+                           justify-start
+                           mx-[24px]
+                           p-[0px]
+                           overflow-hidden
+                           
+                           ">
+
+                    <li class="
+                            flex
+                            items-center
+                            text-white 
+                            rounded-full 
+                            hover:bg-neutral-800 
+                            hover:rounded-full 
+                            px-[12px] py-[4px] 
+                            transition duration:700 ease-linear 
+                            items-center
+                            "><a href="/">Ride</a></li>
+                    <li class="
+                            flex
+                            items-center
+                            text-white 
+                            rounded-full 
+                            hover:bg-neutral-800 
+                            hover:rounded-full 
+                            px-[12px] py-[4px] 
+                            transition duration:700 ease-linear 
+                            items-center
+                            "><a href="/">Drive</a></li>
+
+                    <li class="
+                            flex
+                            items-center
+                            text-white 
+                            rounded-full 
+                            hover:bg-neutral-800 
+                            hover:rounded-full 
+                            px-[12px] py-[4px] 
+                            transition duration:700 ease-linear 
+                            items-center
+                "><a href="/">Buisness</a></li>
+
+                    <li class="
+                            flex
+                            items-center
+                            text-white 
+                            rounded-full 
+                            hover:bg-neutral-800 
+                            hover:rounded-full 
+                            px-[12px] py-[4px] 
+                            transition duration:700 ease-linear 
+                            ">
+                        <button class="flex
+                                         items-center
+                                         gap-[4px]
+                                         ">About <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                                <path d="M18 8v3.8l-6 4.6-6-4.6V8l6 4.6L18 8Z" fill="currentColor"></path>
+                            </svg></button>
+                    </li>
+                </ul>
+
+                <!-- CTA -->
+                <ul class="flex flex-grow-0 flex-shrink-0
+                           basis-auto
+                           self-end
+                           justify-end
+                           ">
+                    <li class="
+                              invisible
+                              lg:visible
+                            text-white  
+                            rounded-full 
+                            hover:bg-neutral-800 
+                            hover:rounded-full 
+                            px-[12px] py-[4px] 
+                            transition duration:700 ease-linear 
+                            ">
+                        <button class="flex
+                                           items-center
+                                           gap-[4px]">
+
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-.9 11-11S18.1 1 12 1Zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5ZM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5Zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1Zm1.9-6.1-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4ZM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12Zm3.5 6.6 1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4Z"
+                                    fill="currentColor"></path>
+                            </svg> EN</button>
+                    </li>
+
+                    <li class="
+                              invisible
+                              lg:visible
+                            flex
+                            items-center
+                            text-white  
+                            rounded-full 
+                            hover:bg-neutral-800 
+                            hover:rounded-full 
+                            px-[12px] py-[4px] 
+                            transition duration:700 ease-linear 
+                            "><a href="/">
+                            Help</a></li>
+
+                    <button class="
+                            flex
+                            items-center
+                            text-white 
+                            rounded-full
+                            hover:bg-neutral-800 
+                            hover:rounded-full 
+                            px-[12px] py-[4px] 
+                            transition duration:700 ease-linear 
+                            mr-[8px]
+                            ">Log in</button>
+
+                    <button class="
+                            flex
+                            items-center
+                            px-[12px] py-[4px]
+                            bg-white 
+                            rounded-full  
+                            hover:bg-neutral-200 
+                            hover:rounded-full  
+                            transition duration:700 ease-linear 
+                            text-black rounded-full">
+
+                        Sign up
+                    </button>
+
+                    <div class="flex items-center lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                            height="36" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                        </svg></div>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- herosection -->
+
+    <div class="w-full flex justify-center bg-black lg:bg-white">
+
+
+
+        <section class="w-[1440px] h-fit
+                        flex justify-between
+                        px-[64px]
+                        py-[64px]
+                        items-center
+                        sm:items-start">
+
+            <div class="container h-full w-full">
+
+                <div class="ml-[24px] lg:mr-[48px] px-[32px]">
+
+                    <div>
+                        <h1 class="pb-[24px] lg:text-black lg:pb-[32px]
+                               text-white text-[52px] font-bold leading-tight">
+                            Go anywhere with Uber
+                        </h1>
+                        <h4 class="pb-[16px] text-white lg:hidden font-semibold">Request a ride hop in and go</h4>
+                    </div>
+
+                    <!-- forms -->
+                    <div class="flex-col 
+                                mb-[16px]
+                                lg:pr-[64px]">
+
+                        <!-- pickup location -->
+                        <div class="relative max-w-full mb-[16px] ">
+
+                            <!-- svg -->
+                            <div class="absolute
+               inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon">
+                                    <title>search</title>
+                                    <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+
+                            <!-- input -->
+                            <input class="w-full 
+                                          py-[14px]
+                                          pl-9
+                                          placeholder-neutral-600 bg-neutral-100 
+                                          text-[16px] font-normal
+                                          rounded-md
+                                          " type="text" name="Pickup Location" placeholder="Pickup Location">
+
+                            <!-- svg -->
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                                <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none"
+                                    aria-label="Pickup location" class="pe-location-fetch css-bOZeEP" role="button"
+                                    tabindex="0">
+                                    <path d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+
+                        <!-- droplocation -->
+                        <div class="relative max-w-full mb-[16px]">
+
+                            <!-- svg -->
+                            <div class="absolute
+                                        inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon">
+                                    <title>search</title>
+                                    <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+
+                            <!-- input -->
+                            <input class="w-full 
+                                          p-[14px]
+                                          pl-9
+                                          placeholder-neutral-600 bg-neutral-100 
+                                          text-[16px] font-normal
+                                          rounded-md
+                                          " type="text" name="Dropoff Location" placeholder="Dropoff Location">
+
+                        </div>
+
+                        <!-- date&time -->
+                        <div class="flex gap-[8px] max-w-full mb-[16px]">
+                            <!-- date -->
+                            <div class="relative flex-1">
+                                <!-- input -->
+                                <input class="w-full 
+                                              p-2.5
+                                              pl-9
+                                              placeholder-neutral-600 bg-neutral-100 
+                                              text-[16px] font-normal
+                                              rounded-md
+                                              " type="date" name="date" placeholder="today">
+                            </div>
+
+                            <!-- time -->
+                            <div class="relative flex-1">
+                                <!-- input -->
+                                <input class="w-full 
+                                              p-2.5
+                                              pl-9
+                                              placeholder-neutral-600 bg-neutral-100 
+                                              text-[16px] font-normal
+                                              rounded-md
+                                              " type="time" name="Dropoff Location" placeholder="Dropoff Location">
+
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="flex flex-wrap">
+                            <button class="bg-white text-black
+                                           lg:bg-black 
+                                           lg:text-white font-semibold
+                                           rounded-lg
+                                           py-[14px]
+                                           px-[25px]
+                                           lg:hover:bg-neutral-700
+                                           lg:transition-all duration-500 eas-in">
+                                See Prices
+                            </button>
+
+                            <button class="flex
+                                           px-[25px]
+                                           py-[14px]
+                                           ">
+
+                                <div class="text-white lg:text-black
+                                            max-w-full
+                                            border-b-[1px]
+                                            border-b-neutral-300
+                                            hover:border-b-neutral-900
+                                            transition-all duration-500">
+                                    Log in to see your recent activity
+                                </div>
+                            </button>
+
+
+                            <div class="flex lg:hidden mt-[4px]">
+                                <img alt="Ride with Uber"
+                                    src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_690,w_552/v1684852612/assets/ba/4947c1-b862-400e-9f00-668f4926a4a2/original/Ride-with-Uber.png"
+                                    aria-hidden="true" role="presentation" class="css-ZwMiT">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- maps -->
+            <div class="hidden lg:flex h-full w-full px-[48px]">
+                <div class="h-[600px] w-full
+                            bg-neutral-300">
+
+                </div>
+            </div>
+
+    </div>
+    </section>
+
+    <!-- Sggestions -->
+
+    <section class="w-full flex justify-center">
+
+        <div class="w-[1440px] h-fit
+                    
+                    px-[120px] py-[64px]
+                    items-center sm:items-start">
+
+            <div class="pb-[24px] mb-[36px]">
+                <h1 class="text-[36px] font-bold leading-tight">
+                    Suggestions</h1>
+            </div>
+
+            <!-- Cards -->
+            <div class="lg:flex flex-wrap gap-[8px]">
+                <!-- card 1 -->
+               <div class="flex flex-1 rounded-[8px] bg-neutral-200 p-[16px] mb-[8px]">
+                <div class="flex-col">
+                    <h2 class="text-[16px] font-medium mb-[8px]">Reserve</h2>
+                    <p class="text-[12px] font-normal mb-[8px]">Reserve your ride in advance so you can relax on the day of your trip</p>
+                    <button class=" bg-white [14px] font-medium rounded-full py-[10px] px-[12px]">Details</button>
+                </div>
+                <div class="size-[128px]"><img src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png" alt=""></div>
+               </div>
+
+               <!-- card 2 -->
+               <div class="flex flex-1 rounded-[8px] bg-neutral-200 p-[16px] mb-[8px]">
+                <div class="flex-col">
+                    <h2 class="text-[16px] font-medium mb-[8px]">Ride</h2>
+                    <p class="text-[12px] font-normal mb-[8px]">Go anywhere with Uber. Request a ride, hop in & go. </p>
+                    <button class=" bg-white [14px] font-medium rounded-full py-[10px] px-[12px]">Details</button>
+                </div>
+                <div class="size-[128px]"><img src="https://mobile-content.uber.com/launch-experience/ride.png" alt=""></div>
+               </div>
+
+               <!-- Card 3 -->
+               <div class="flex flex-1 rounded-[8px] bg-neutral-200 p-[16px] mb-[8px]">
+                <div class="flex-col">
+                    <h2 class="text-[16px] font-medium mb-[8px]">Reserve</h2>
+                    <p class="text-[12px] font-normal mb-[8px]">Reserve your ride in advance so you can relax on the dayof your trip</p>
+                    <button class=" bg-white [14px] font-medium rounded-full py-[10px] px-[12px]">Details</button>
+                </div>
+                <div class="size-[128px]"><img src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png" alt=""></div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+    </div>
+</body>
+
+</html>
