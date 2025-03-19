@@ -31,9 +31,9 @@
 
             <div class=" 
                         box-border
-                        flex
+                        flex justify-between
                         mx-auto
-                        px-[64px]
+                        px-[16px] md:px-[64px]
                         w-full
                         max-w-[1408px]
                         
@@ -57,9 +57,8 @@
                         Uber</li>
                 </ul>
                 <!-- Navlinks -->
-                <ul class="invisible
-                           lg:visible
-                           flex
+                <ul class="hidden
+                           lg:flex
                            flex-auto
                            justify-start
                            mx-[24px]
@@ -189,10 +188,11 @@
                         Sign up
                     </button>
 
-                    <div class="flex items-center lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                    <div class="hidden md:flex items-center lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="36"
                             height="36" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
                             <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
                         </svg></div>
+
 
                 </ul>
             </div>
@@ -202,7 +202,8 @@
     <!-- herosection -->
 
     <div class="w-full flex justify-center bg-black lg:bg-white">
-        <section class="w-full max-w-[1440px] h-fit 
+        <section
+            class="w-full max-w-[1440px] h-fit 
                    flex justify-between items-start
                    mt-[32px] 
                    px-4 py-8 lg:px-16 lg:py-12 
@@ -214,7 +215,8 @@
 
                     <!-- Heading & subheading  -->
                     <div>
-                        <h1 class="pb-6 lg:pb-8 
+                        <h1
+                            class="pb-6 lg:pb-8 
                                    text-white lg:text-black text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                             Go anywhere with Uber
                         </h1>
@@ -229,7 +231,7 @@
                     <div class="mb-4">
 
                         <div class="sm:pr-40 lg:pr-16 pr-8">
-
+                            
                             <div class="relative max-w-md mb-4">
                                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon">
@@ -291,12 +293,12 @@
                             </button>
                         </div>
                     </div>
-
+                    
                 </div>
 
                 <!-- image -->
                 <div class="flex block w- full lg:hidden mt-1">
-                    <img alt="Ride with Uber"
+                    <img  alt="Ride with Uber"
                         src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_690,w_552/v1684852612/assets/ba/4947c1-b862-400e-9f00-668f4926a4a2/original/Ride-with-Uber.png"
                         aria-hidden="true" role="presentation" class=" w-full block css-ZwMiT">
                 </div>
@@ -315,10 +317,11 @@
 
         <div class="w-[1440px] h-fit
                     
-                    px-[120px] py-[64px]
+                    px-[24px] md:px-[120px] 
+                    py-[32px] md:py-[64px]
                     items-center sm:items-start">
 
-            <div class="pb-[24px] mb-[36px]">
+            <div class="pb-[24px] mb-[16px] md:mb-[36px]">
                 <h1 class="text-[36px] font-bold leading-tight">
                     Suggestions</h1>
             </div>
@@ -334,7 +337,7 @@
                         <button
                             class=" bg-white [14px] font-medium rounded-full py-[10px] px-[12px] hover:bg-neutral-300 transition-all duration-500 ">Details</button>
                     </div>
-                    <div class="size-[128px]"><img src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png"
+                    <div class=" min-size-[64px] "><img src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png"
                             alt=""></div>
                 </div>
 
@@ -347,7 +350,7 @@
                         <button
                             class=" bg-white [14px] font-medium rounded-full py-[10px] px-[12px]  hover:bg-neutral-300 transition-all duration-500">Details</button>
                     </div>
-                    <div class="size-[128px]"><img src="https://mobile-content.uber.com/launch-experience/ride.png"
+                    <div class="min-size-[72px]"><img src="https://mobile-content.uber.com/launch-experience/ride.png"
                             alt=""></div>
                 </div>
 
@@ -360,62 +363,53 @@
                         <button
                             class=" bg-white [14px] font-medium rounded-full py-[10px] px-[12px]  hover:bg-neutral-300 transition-all duration-500">Details</button>
                     </div>
-                    <div class="size-[128px]"><img src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png"
+                    <div class="min-size-[64px]"><img src="https://mobile-content.uber.com/uber_reserve/reserve_clock.png"
                             alt=""></div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Login Sction -->
     <section class="w-full flex justify-center">
         <div class="max-w-[1440px] lg:py-[64px] lg:px-[120px] lg:flex
                     px-[32px] py-[54px]">
+            
+           <div class="flex-col sm:mb-[16px]">
 
-            <div class="flex-col sm:mb-[16px]">
+             <div class="text-[52px] font-bold leading-[64px] mb-[32px]">
+                <h1>Log in to see your recent activity</h1>
+             </div>
 
-                <div class="text-[52px] font-bold leading-[64px] mb-[32px]">
-                    <h1>Log in to see your recent activity</h1>
-                </div>
+             <div class="text-[16px] leading-[24px] mb-[20px]">
+                <p>View past trips, tailored suggestions, support resources, and more.</p>
+             </div>
 
-                <div class="text-[16px] leading-[24px] mb-[20px]">
-                    <p>View past trips, tailored suggestions, support resources, and more.</p>
-                </div>
-
-                <div class="mt-[12px] md:flex md:gap-4 lg:flex-wrap lg:gap-0">
-                    <button class="text-white text[16px] font-medium leading-[20px] 
+             <div class="mt-[12px] md:flex md:gap-4 lg:flex-wrap lg:gap-0">
+                <button class="text-white text[16px] font-medium leading-[20px] 
                                bg-black rounded-[8px]
                                px-[25px] py-[14px]
                                hover:bg-gray-800
                                transition-all duration-500 ease-in">
-                        Log in to your account
+                    Log in to your account
 
-                    </button>
+                </button>
 
-                    <button class="flex pt-[14px] 
+                <button class="flex pt-[14px] 
                                border-b-neutral-300 border-b-[1px]
                                hover:border-b-neutral-900
                                transition-all duration-500 ease-in">
-                        Don't have an uber account? Sign up
-                    </button>
-                </div>
-            </div>
+                    Don't have an uber account? Sign up
+                </button>
+             </div> 
+           </div>
 
-            <div class="flex lg:pl-[64px]">
-                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_768,w_1152/v1730197725/assets/0f/48c7ba-da13-4fdc-b54c-42878042f513/original/Airport-Fall.png"
-                    alt="">
-            </div>
+           <div class="flex lg:pl-[64px]">
+            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_768,w_1152/v1730197725/assets/0f/48c7ba-da13-4fdc-b54c-42878042f513/original/Airport-Fall.png" alt="">
+           </div>
         </div>
     </section>
-
-    <!-- paln for later -->
-    <section class="w-full flex justify-center">
-        <div>
-            
-        </div>
-
-    </section>
-
+    </div>
 </body>
 
 </html>
